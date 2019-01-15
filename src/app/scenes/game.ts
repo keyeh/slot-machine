@@ -86,11 +86,12 @@ export class GameScene extends Scene {
     }
 
     protected create(): void {
-        const template: PIXI.Sprite = PIXI.Sprite.fromImage("assets/template.png");
-        template.width = Scene.width;
-        template.height = Scene.height;
-        template.alpha = 0.2;
-        this.addChildAt(template, 0);
+        // Background image
+        // const template: PIXI.Sprite = PIXI.Sprite.fromImage("assets/template.png");
+        // template.width = Scene.width;
+        // template.height = Scene.height;
+        // template.alpha = 0.2;
+        // this.addChildAt(template, 0);
     }
 
     private spin(): void {

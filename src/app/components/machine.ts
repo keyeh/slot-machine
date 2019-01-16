@@ -39,7 +39,7 @@ export class Machine extends PIXI.Container {
         let timeout: number = 0;
         for (const reel of this.reels) {
             setTimeout(reel.spin.bind(reel), timeout);
-            timeout += 300;
+            timeout += 50;
         }
         setTimeout(this.stopReels.bind(this), 1500);
     }

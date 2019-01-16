@@ -83,7 +83,7 @@ export class Reel extends PIXI.Container {
             tile.y += speed;
         }
 
-        this.blurFilter.strength = speed * 0.3;
+        this.blurFilter.strength = speed * 0.15;
 
         const limitY: number = this.realHeight + this.tileHeight;
         for (let i: number = this.tiles.length - 1; i >= 0; i--) {
@@ -108,7 +108,6 @@ export class Reel extends PIXI.Container {
             const n: number = this.time / Reel.inTime;
             speed *= this.easeInBack(n);
         }
-
         return speed;
     }
 
